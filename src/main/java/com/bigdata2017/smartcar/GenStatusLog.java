@@ -9,7 +9,7 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class GenStatusLog {
-
+// 날짜별로 로그를 남김
 	public static void main(String[] args) {
 		
 		PrintWriter printWriter = null;
@@ -25,7 +25,7 @@ public class GenStatusLog {
 				carCount = Integer.parseInt(args[1]);
 			}
 			
-			String logFile = "./logs/status_" + date + ".log";
+			String logFile = "./logs/status/status_" + date + ".log";
 			printWriter = new PrintWriter( new FileWriter( logFile ), true );
 			
 			ArrayList<Thread> threads = new ArrayList<Thread>();
